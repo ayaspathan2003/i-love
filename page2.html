@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import Question</title>
+    <style>
+    body {
+    background-image: url(rainbow.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+#no-button {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 6, 6);
+    cursor: pointer;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button {
+    margin: 0 10px;
+    color: white;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+.container {
+    display: flex;
+    color:rgb(19, 13, 13) ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.message {
+    display: none;
+}
+
+.banner-gif {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+    }
+}
+
+/*.language-selector {
+    margin-top: 30px;
+    position: unset;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.language-selector label {
+    margin-right: 10px;
+}
+
+.language-selector select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.creator {
+    text-decoration: none;
+    color: #333;
+}
+
+.creator:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.creator:hover {
+    text-decoration: underline;
+    color: #555;
+}
+*/
+/* CSS For Mobile */
+@media (max-width: 768px) {
+    .language-selector {
+        position: unset;
+        margin-top: 30px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+#question-heading{
+    font-size: 20px;
+}
+
+</style>  
+</head>
+  <body>
+    <div class="container">
+      <div class="banner-gif">
+        <img id="banner" src="no.gif" alt="banner" />
+      </div>
+      <h1 id="question-heading">Will you be my Girlfriend?</h1>
+      <div class="buttons">
+        <a href="yes.html"><input type="button" value="Yes" id="yes-button"></a>
+        <a href="page3.html"><input type="button" value=" NO:- 
+तुला खात्री
+ आहे?" id="no-button"></a>
+        </div>
+      <div class="message">
+        </div>
+      <div class="language-selector">
+        
+      </div>
+    </div>
+    </body>
+</html>
+
+  
